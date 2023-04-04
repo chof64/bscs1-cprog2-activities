@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "bscs1-cprog2-activities"
+version = "0.1.0"
+description = ""
+authors = ["Chad Fernandez <contact@chadfernandez.me>"]
+readme = "README.md"
+packages = [{include = "bscs1_cprog2_activities"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.tools.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+autoflake = "^2.0.2"
+pylint = "^2.17.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
